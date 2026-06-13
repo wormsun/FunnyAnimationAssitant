@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "name": "Community Demo Project",
+    "resolution": {
+      "w": 1920,
+      "h": 1080
+    },
+    "fps": 25,
+    "version": "2.0.0"
+  },
+  "assets": {
+    "backgrounds": [],
+    "props": [],
+    "sounds": [],
+    "musics": []
+  },
+  "expressions": {},
+  "actors": [],
+  "narrator": {
+    "voice": {}
+  },
+  "sceneTemplates": [],
+  "compositeCharacters": [],
+  "customPresetAnimations": [],
+  "episodes": [
+    {
+      "id": "episode_demo_001",
+      "episodeNumber": 1,
+      "name": "示例动画",
+      "scenes": [],
+      "bgmTracks": [],
+      "duration": 0,
+      "createdAt": 1767225600000,
+      "modifiedAt": 1767225600000,
+      "version": "6.0"
+    }
+  ]
+}

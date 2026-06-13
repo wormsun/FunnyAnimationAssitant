@@ -1,0 +1,14 @@
+# 统一源代码行尾为 LF，避免 CRLF/LF 混用导致 diff 噪声污染 git blame
+*.ts text eol=lf
+*.vue text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Binary assets
+*.ttf binary
+*.woff2 binary
+*.png binary
+*.svg text eol=lf

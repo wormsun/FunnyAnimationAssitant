@@ -1,0 +1,67 @@
+// Dark Theme Variables for Character Editor
+// Professional dark mode color scheme
+
+:root {
+  // Background Colors
+  --bg-primary: #1a1a1a;           // Main background
+  --bg-secondary: #252525;          // Panel backgrounds
+  --bg-tertiary: #2d2d2d;          // Hover states, inputs
+  --bg-hover: #353535;              // Interactive hover
+  
+  // Text Colors
+  --text-primary: #e5e5e5;          // Primary text
+  --text-secondary: #a0a0a0;        // Secondary text
+  --text-muted: #6b6b6b;            // Muted text
+  
+  // Border Colors
+  --border-color: #3a3a3a;          // Default borders
+  --border-light: #4a4a4a;          // Light borders
+  --border-dark: #2a2a2a;           // Dark borders
+  
+  // Accent Colors
+  --accent-color: #3b82f6;          // Primary accent (blue)
+  --accent-light: rgba(59, 130, 246, 0.2);  // Light accent overlay
+  --accent-hover: #2563eb;           // Accent hover
+  
+  // Status Colors
+  --success-color: #10b981;
+  --error-color: #ef4444;
+  --warning-color: #f59e0b;
+  
+  // Shadows
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.6);
+  
+  // Transitions
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+}
+
+// Global dark theme base styles
+.dark-theme {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  
+  // Scrollbar styling
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+    
+    &:hover {
+      background: var(--bg-hover);
+    }
+  }
+}
+

@@ -1,0 +1,72 @@
+name: Bug report
+description: Report a reproducible problem in the Community Edition.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Funny Animation Assistant Community Edition.
+        Please keep reports focused on the local-first open source version.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong?
+      placeholder: The project fails to save after importing audio...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest sequence that reproduces the issue.
+      placeholder: |
+        1. Run npm run dev
+        2. Create a new project
+        3. Import an audio file
+        4. Click save
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The project should save and reopen with the imported audio.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: The save action fails with...
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: Chrome 126 / Edge 126
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js and npm
+      placeholder: Node.js 20.x, npm 10.x
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste relevant console output. Do not include secrets, private paths, or internal documents.
+      render: shell
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: I can reproduce this in the Community Edition without login, VIP, payment, or private cloud services.
+          required: true
+        - label: I have removed secrets, tokens, private URLs, and internal file paths from this report.
+          required: true

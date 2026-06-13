@@ -1,0 +1,40 @@
+Funny Animation Assistant Community Edition
+Copyright 2026 Funny Animation Assistant contributors
+
+This product includes software developed by the project contributors
+and is licensed under the Apache License, Version 2.0.
+
+Third-party runtime and development dependencies are installed through
+npm and retain their own licenses. See package-lock.json for dependency
+metadata.
+
+Bundled fonts
+-------------
+
+The font files under public/fonts/ and fonts-source/ are distributed
+under the SIL Open Font License 1.1. License files are kept beside the
+font assets where available.
+
+- Noto Sans SC, by Google: SIL Open Font License 1.1
+- Noto Serif SC, by Google: SIL Open Font License 1.1
+- LXGW WenKai, by LXGW: SIL Open Font License 1.1
+- ZCOOL QingKe HuangYou, by ZCOOL: SIL Open Font License 1.1
+- Ma Shan Zheng: SIL Open Font License 1.1
+
+Project artwork and user assets
+-------------------------------
+
+The application logo, favicon, and watermark assets in public/ are part
+of this project unless otherwise stated.
+
+User-imported images, audio, video, fonts, project files, and generated
+works remain subject to the licenses and usage rights of their original
+materials. Using this tool does not grant additional rights to third-
+party assets.
+
+Internal planning and launch materials
+--------------------------------------
+
+Directories matching doc/ and doc-prd/ are internal working materials and
+are intentionally excluded from the first public open-source release. They
+may be published later after redaction and documentation cleanup.

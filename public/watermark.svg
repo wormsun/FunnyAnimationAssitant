@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="144" viewBox="0 0 720 144">
+  <defs>
+    <!-- 文字发光效果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 文字阴影 -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <!-- 视频图标 -->
+  <g opacity="0.8" filter="url(#shadow)">
+    <!-- 摄像机机身 -->
+    <rect x="20" y="44" width="60" height="48" rx="4" fill="none" stroke="white" stroke-width="6"/>
+    <!-- 镜头 -->
+    <circle cx="50" cy="68" r="14" fill="none" stroke="white" stroke-width="5"/>
+    <circle cx="50" cy="68" r="7" fill="white"/>
+    <!-- 录制按钮 -->
+    <circle cx="70" cy="52" r="5" fill="#ff4444"/>
+    <!-- 三角形播放按钮 -->
+    <polygon points="96,52 96,84 120,68" fill="white"/>
+  </g>
+  
+  <!-- 项目水印文字 -->
+  <text 
+    x="136" 
+    y="96" 
+    font-family="'Noto Sans SC', 'Noto Sans Simplified Chinese', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif" 
+    font-size="64" 
+    font-weight="700" 
+    fill="white" 
+    opacity="0.8"
+    filter="url(#glow)"
+    letter-spacing="1">
+    沙雕动画小助手
+  </text>
+</svg>

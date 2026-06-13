@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest an improvement for the Community Edition.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please focus requests on the local-first open source edition.
+        Commercial platform features such as login, VIP, payments, and private backends are out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem would this solve?
+      placeholder: It is hard to test a local TTS provider before generating a full scene...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the app do?
+      placeholder: Add a provider test button in the TTS settings panel...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Project files
+        - Material management
+        - Script editor
+        - Scene editor
+        - TTS provider
+        - Preview or export
+        - Documentation
+        - Examples
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Manual audio import works, but...
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This request does not require login, VIP, payment, cloud sync, or a private backend.
+          required: true
+        - label: I understand maintainers may prioritize local-first stability and documentation before larger features.
+          required: true

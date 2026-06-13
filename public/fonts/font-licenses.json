@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Noto Sans SC",
+        "version": "v36",
+        "license": "SIL Open Font License 1.1",
+        "licenseFile": "/fonts/noto-sans-sc/OFL.txt",
+        "author": "Google",
+        "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+        "description": "默认无衬线中文字体，适合 UI、标题、正文"
+    },
+    {
+        "name": "Noto Serif SC",
+        "version": "v23",
+        "license": "SIL Open Font License 1.1",
+        "licenseFile": "/fonts/noto-serif-sc/OFL.txt",
+        "author": "Google",
+        "url": "https://fonts.google.com/noto/specimen/Noto+Serif+SC",
+        "description": "衬线中文字体，适合正式标题、说明文字"
+    },
+    {
+        "name": "LXGW WenKai",
+        "version": "v1.501",
+        "license": "SIL Open Font License 1.1",
+        "licenseFile": "/fonts/lxgw-wenkai/OFL.txt",
+        "author": "LXGW (落霞孤鹜)",
+        "url": "https://github.com/lxgw/LxgwWenKai",
+        "description": "文艺手写风格字体，适合轻内容场景"
+    },
+    {
+        "name": "ZCOOL QingKe HuangYou",
+        "version": "v15",
+        "license": "SIL Open Font License 1.1",
+        "licenseFile": "/fonts/zcool-qingke-huangyou/OFL.txt",
+        "author": "ZCOOL (站酷)",
+        "url": "https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou",
+        "description": "活泼标题字体，适合装饰性文字"
+    },
+    {
+        "name": "Ma Shan Zheng",
+        "version": "v10",
+        "license": "SIL Open Font License 1.1",
+        "licenseFile": "/fonts/ma-shan-zheng/OFL.txt",
+        "author": "Ma Shan Zheng",
+        "url": "https://fonts.google.com/specimen/Ma+Shan+Zheng",
+        "description": "毛笔楷书风格，适合国风短标题"
+    }
+]

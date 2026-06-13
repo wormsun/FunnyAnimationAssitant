@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+  <defs>
+    <!-- 渐变定义（蓝色系）-->
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A8A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2563EB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 发光效果 -->
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 文字阴影 -->
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 图标背景圆形 -->
+  <circle cx="60" cy="60" r="45" fill="url(#iconGradient)" filter="url(#iconGlow)"/>
+  
+  <!-- 摄像机图标 -->
+  <g transform="translate(60, 60)">
+    <!-- 摄像机机身 -->
+    <rect x="-18" y="-12" width="28" height="20" rx="2" fill="white" opacity="0.9"/>
+    <!-- 镜头 -->
+    <circle cx="-4" cy="-2" r="7" fill="white" opacity="0.95"/>
+    <circle cx="-4" cy="-2" r="4" fill="url(#iconGradient)"/>
+    <!-- 录制指示灯 -->
+    <circle cx="6" cy="-8" r="2.5" fill="#ff4444"/>
+    <!-- 播放按钮 -->
+    <polygon points="14,-8 14,4 24,-2" fill="white" opacity="0.9"/>
+  </g>
+  
+  <!-- 沙雕动画小助手 文字 -->
+  <text 
+    x="120" 
+    y="75" 
+    font-family="'Noto Sans SC', 'Noto Sans Simplified Chinese', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif" 
+    font-size="36" 
+    font-weight="700" 
+    fill="#1F2937"
+    filter="url(#textShadow)"
+    letter-spacing="0.5">
+    沙雕动画小助手
+  </text>
+  
+  <!-- 副标题 -->
+  <text 
+    x="120" 
+    y="95" 
+    font-family="'Noto Sans SC', 'Noto Sans Simplified Chinese', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif" 
+    font-size="14" 
+    font-weight="400" 
+    fill="#6B7280"
+    letter-spacing="0.5">
+    动漫短剧在线制作平台
+  </text>
+</svg>

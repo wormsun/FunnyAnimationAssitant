@@ -1,0 +1,11 @@
+{
+    "*.{ts,tsx,vue}": [
+        "eslint --fix"
+    ],
+    "*.{js,jsx}": [
+        "eslint --fix"
+    ],
+    "*": [
+        "betterer precommit"
+    ]
+}

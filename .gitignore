@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules
+
+# Build
+dist
+dist-ssr
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.trae
+.gemini
+
+# Betterer ESLint Cache
+.eslintcache-betterer
+
+# ESLint Cache
+.eslintcache
+
+# Internal planning and launch materials
+doc/
+doc-prd/
+
+# Private deployment and commercial-only assets
+public/vipcode/
+
+# Generated font build reports with local machine paths
+public/fonts/**/reporter.json

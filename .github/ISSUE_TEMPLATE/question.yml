@@ -1,0 +1,27 @@
+name: Question
+description: Ask a usage, setup, or contribution question.
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to understand or accomplish?
+      placeholder: How should I adapt a local HTTP TTS service?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Share relevant environment details or what you have already tried.
+      placeholder: I am running npm run dev on Chrome...
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Safety check
+      options:
+        - label: I have not included secrets, tokens, private URLs, or internal documents.
+          required: true
