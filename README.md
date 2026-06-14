@@ -6,6 +6,10 @@
 
 ![项目主页截图](public/screenshots/project-home.png)
 
+## 技术交流
+
+技术讨论QQ群809574217
+
 ## 功能范围
 
 - 本地项目创建、打开和保存，项目文件使用 `.anime` JSON 格式。

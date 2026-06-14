@@ -213,6 +213,9 @@
             <p class="support-group-desc">
               本地优先的开源创作器，不内置远程账号、运营后台或私有服务依赖。
             </p>
+            <p class="support-group-number">
+              技术讨论QQ群809574217
+            </p>
           </div>
         </div>
          
