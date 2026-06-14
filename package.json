@@ -10,6 +10,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
+    "tts:provider": "node examples/tts-provider/server.mjs",
+    "dev:with-tts": "node examples/tts-provider/dev-with-tts.mjs",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint src --cache",
     "lint:fix": "eslint src --fix",

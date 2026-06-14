@@ -43,9 +43,11 @@ for (const file of candidates) {
 }
 
 const requiredIgnoredPaths = [
+  '.env',
   'doc/README.md',
   'doc-prd/README.md',
   'dist/index.html',
+  'examples/tts-provider/.env',
   'node_modules/.package-lock.json',
   'public/vipcode/example.txt',
 ]

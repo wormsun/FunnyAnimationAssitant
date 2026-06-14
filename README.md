@@ -61,10 +61,42 @@ npm run release:audit
 开源版默认不连接任何私有 TTS 后端，也不会因为未配置 TTS 阻塞编辑流程。你可以先手动导入音频，或把本地、自托管、第三方 TTS 服务适配成统一 Provider。
 内置音色 ID 仅用于本地项目兼容和第三方 Provider 适配，不代表开源版默认连接腾讯云、百度云或其他云服务。
 
+### 使用内置 local-http Provider 示例
+
+如果你有腾讯云或百度云 TTS API Key，推荐使用仓库内置的本地 HTTP Provider 示例。Key 保存在本机 `examples/tts-provider/.env` 中，主应用只连接 `http://127.0.0.1:7860`，可以避开浏览器直连云厂商接口时常见的 CORS 问题。
+
+复制 Provider 配置：
+
+```bash
+copy examples\tts-provider\.env.example examples\tts-provider\.env
+```
+
+编辑 `examples/tts-provider/.env`，填入腾讯云或百度云配置。然后在根目录启动：
+
+```bash
+npm run dev:with-tts
+```
+
+也可以拆成两个终端：
+
+```bash
+npm run tts:provider
+npm run dev
+```
+
 复制环境变量示例：
 
 ```bash
 cp .env.example .env
+```
+
+主应用 `.env.local` 或 `.env` 中配置：
+
+```env
+VITE_TTS_PROVIDER_URL=http://127.0.0.1:7860
+VITE_TTS_SYNTHESIZE_ENDPOINT=/synthesize
+VITE_TTS_PREVIEW_ENDPOINT=/preview
+VITE_TTS_VOICES_ENDPOINT=/voices
 ```
 
 本地 HTTP Provider 可返回以下任一种响应：

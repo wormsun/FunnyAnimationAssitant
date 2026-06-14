@@ -16,6 +16,8 @@ Community Edition 是本地优先版本，不需要登录态。默认入口是 `
 
 可以在 `.env` 中配置 `VITE_TTS_PROVIDER_URL`，让前端连接本地或自托管 HTTP 服务。服务响应需要包含 `audioBase64` 或 data URL 格式的 `audio` 字段。示例见 [.env.example](.env.example)。
 
+仓库内置了一个 local-http Provider 示例，支持腾讯云和百度云 TTS。复制 `examples/tts-provider/.env.example` 为 `examples/tts-provider/.env` 并填入自己的 Key 后，可以运行 `npm run dev:with-tts` 同时启动 Provider 和主应用。
+
 ## 为什么不内置腾讯云或百度云 TTS？
 
 云厂商 TTS 通常需要密钥、计费和后端代理。开源版不应默认绑定某个私有后端，也不应把密钥放在前端。后续可以通过本地 Provider 或独立适配器接入。
