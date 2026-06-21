@@ -508,7 +508,7 @@ export const useSceneObjectStore = defineStore('sceneObject', () => {
   }
 
   // Clip-Mask Phase 1：创建蒙版对象。
-  // 详见 doc-prd/clip-mask-design.md（v2.1）。
+  // 详见 docs/features/clip-mask.md（v2.1）。
   // targetIds 故意不暴露在 options 中：UI 路径默认空数组，反序列化路径由 maskSerializer 通过 finalize 步骤回填，
   // 避免在创建时绕过独占校验。
   function createMaskObject(

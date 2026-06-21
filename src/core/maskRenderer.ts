@@ -1,7 +1,7 @@
 /**
  * Clip-Mask Phase 1 渲染管线
  *
- * 详见 doc-prd/clip-mask-design.md（v2.1）。
+ * 详见 docs/features/clip-mask.md（v2.1）。
  *
  * 实现备注（与 PRD §11.3 的差异）：
  * PRD 原方案在 target 之上插入 wrapper 容器，将 mask Graphics 与 target 一起置于 wrapper 下。

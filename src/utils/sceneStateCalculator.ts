@@ -277,7 +277,7 @@ export function applyBlockActionsToState(prevState: RuntimeSceneSnapshot, block:
   reconcileRuntimeHierarchy(newState)
 
   // ========== Clip-Mask Phase 1: Mask post-pass (D1.5 同槽 target 归并) ==========
-  // 详见 doc-prd/clip-mask-implementation-plan.md §3 D1.5
+  // 详见 docs/features/clip-mask.md §3 D1.5
   applyMaskPostPass(prevState, newState, sortedActions)
 
   // v9.5: 搴旂敤鎵€鏈?action 鍚庯紝澶勭悊 autoDespawnOnBlockEnd
@@ -333,8 +333,8 @@ export function applyBlockActionsToState(prevState: RuntimeSceneSnapshot, block:
 
 /** * Clip-Mask Phase 1: D1.5 同槽 target 归并 + 跨 mask 独占裁决
  *
- * 详见 doc-prd/clip-mask-implementation-plan.md §3 D1.5 与
- * doc-prd/clip-mask-design.md §11.4.3。
+ * 详见 docs/features/clip-mask.md §3 D1.5 与
+ * docs/features/clip-mask.md §11.4.3。
  *
  * 算法（按 slotIndex 升序逐 slot 处理）：
  *   1. 折叠：参与 mask 的 set_mask 在槽内按时间顺序套用部分更新（targetIds 整段替换、shape/width/height 覆盖）

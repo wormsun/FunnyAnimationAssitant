@@ -12,7 +12,7 @@ Use this checklist before publishing a public GitHub release.
 - [ ] Run `npm run test`.
 - [ ] Run `npm run build`.
 - [ ] Run `npm run release:audit`.
-- [ ] Confirm `doc/` and `doc-prd/` are not tracked.
+- [ ] Confirm internal-only `doc/` content is not tracked.
 - [ ] Confirm `dist/`, logs, local caches, generated videos, and private deployment config are not tracked.
 - [ ] Confirm the release does not include login, VIP, payment, cloud sync, or private backend logic.
 - [ ] Confirm screenshots, fonts, examples, and bundled assets have documented redistribution rights.

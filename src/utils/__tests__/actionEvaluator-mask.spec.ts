@@ -1,7 +1,7 @@
 /**
  * Clip-Mask Phase 1 D5b — sceneStateCalculator mask post-pass 集成测试
  *
- * 覆盖 doc-prd/clip-mask-implementation-plan.md §3 D1.5 算法：
+ * 覆盖 docs/features/clip-mask.md §3 D1.5 算法：
  *  1. 同 slot 内 set_mask 按目标 mask 折叠（最后一次写入生效）。
  *  2. Claimers 包含本 slot 参与 mask + 上游已占且本 slot 未参与的 owner。
  *  3. |Claimers| ≥ 2 时按 newState.objects 稳定索引升序取首位，其余从 candidate 剔除。

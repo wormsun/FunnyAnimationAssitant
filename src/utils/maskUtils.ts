@@ -1,7 +1,7 @@
 /**
  * Clip-Mask Phase 1 共享工具
  *
- * 详见 doc-prd/clip-mask-design.md（v2.1）。
+ * 详见 docs/features/clip-mask.md（v2.1）。
  * 本模块的实用函数被 maskSerializer / SetMaskHandler / Mask UI 等多个模块共用。
  */
 

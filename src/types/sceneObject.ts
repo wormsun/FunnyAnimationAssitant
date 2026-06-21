@@ -264,7 +264,7 @@ export interface ExpressionObject extends SceneObjectBase {
 }
 
 // Clip-Mask Phase 1: 蒙版对象 — 独立 SceneObject，作为裁切源裁切 targetIds 列表中的目标对象
-// 详见 doc-prd/clip-mask-design.md（v2.1）
+// 详见 docs/features/clip-mask.md（v2.1）
 export type MaskShape = 'rectangle' | 'ellipse'
 /** Phase 1 仅支持 inside_visible（形状内可见、形状外隐藏）。
  *  outer / outside_visible 等模式 Phase 2 引入并扩展该联合类型。 */

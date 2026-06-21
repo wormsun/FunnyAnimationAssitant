@@ -36,7 +36,6 @@ dist-ssr
 
 # Internal planning and launch materials
 doc/
-doc-prd/
 
 # Private deployment and commercial-only assets
 public/vipcode/

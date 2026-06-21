@@ -1,7 +1,7 @@
 /**
  * Mask 序列化器（Clip-Mask Phase 1）
  *
- * 详见 doc-prd/clip-mask-design.md（v2.1）。
+ * 详见 docs/features/clip-mask.md（v2.1）。
  *
  * 特化字段：
  * - shape: 'rectangle' | 'ellipse'

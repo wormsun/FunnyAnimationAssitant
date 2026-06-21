@@ -36,7 +36,7 @@ export interface VoiceOption {
 export const VOICE_OPTIONS: VoiceOption[] = [
     // ================================================================
     // Tencent-compatible provider metadata（48 个）
-    // 参考：doc-prd/Tencent_TTS_API.md
+    // 参考：examples/tts-provider/README.md
     // ================================================================
 
     // --- 超自然大模型 ---
@@ -94,7 +94,7 @@ export const VOICE_OPTIONS: VoiceOption[] = [
 
     // ================================================================
     // Baidu-compatible provider metadata（76 个）
-    // 参考：doc-prd/Baidu_TTS_API.md
+    // 参考：examples/tts-provider/README.md
     // ================================================================
 
     // --- 基础音库 ---

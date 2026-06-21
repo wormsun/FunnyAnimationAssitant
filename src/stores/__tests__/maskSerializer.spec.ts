@@ -1,7 +1,7 @@
 /**
  * Clip-Mask Phase 1 — maskSerializer 序列化 + finalizeMaskTargets 单元测试
  *
- * 详见 doc-prd/clip-mask-design.md（v2.1）§11、§14.1（Stage A）。
+ * 详见 docs/features/clip-mask.md（v2.1）§11、§14.1（Stage A）。
  */
 
 import { createPinia, setActivePinia } from 'pinia'

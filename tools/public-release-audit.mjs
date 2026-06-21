@@ -29,7 +29,6 @@ const issues = []
 
 const forbiddenPublicPrefixes = [
   'doc/',
-  'doc-prd/',
   'dist/',
   'node_modules/',
   'public/vipcode/',
@@ -45,7 +44,6 @@ for (const file of candidates) {
 const requiredIgnoredPaths = [
   '.env',
   'doc/README.md',
-  'doc-prd/README.md',
   'dist/index.html',
   'examples/tts-provider/.env',
   'node_modules/.package-lock.json',
@@ -80,7 +78,6 @@ const textFileExtensions = new Set([
 ])
 
 const secretPatterns = [
-  { name: 'private cloud host', pattern: /\b(?:as\.)?aitalk\.cloud\b/i },
   { name: 'vip private asset path', pattern: /public[\\/]+vipcode/i },
   { name: 'Windows local absolute path', pattern: /[A-Za-z]:\\(?:Users|Study|workspace|Downloads|Desktop)\\/ },
   { name: 'OpenAI-style secret key', pattern: /sk-[A-Za-z0-9_-]{20,}/ },

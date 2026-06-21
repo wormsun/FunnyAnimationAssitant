@@ -9,7 +9,7 @@
  *
  * 注意：本 Handler 内部 *不* 解决多 mask 同 target 的独占冲突。
  * 同 slot 内的归并 + 全局 reverse-index 裁决在 sceneStateCalculator 的
- * mask post-pass 中完成（见 doc-prd/clip-mask-implementation-plan.md §3 D1.5）。
+ * mask post-pass 中完成（见 docs/features/clip-mask.md §3 D1.5）。
  *
  * 用法：
  * - set_mask { shape: 'ellipse' }
